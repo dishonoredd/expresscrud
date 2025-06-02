@@ -7,8 +7,8 @@ class FileService {
       const filePath = path.resolve("static", fileName);
       file.mv(filePath);
       return fileName;
-    } catch (err) {
-      console.log(err);
+    } catch (e) {
+      console.log(e);
     }
   }
 }
